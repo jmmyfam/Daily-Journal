@@ -1,0 +1,16 @@
+main {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    justify-content: center;
+    margin: 150px;
+}
+
+fieldset {
+    display:flex;
+    flex-direction: column;
+}
+
+button:hover {
+    color: aqua:
+}

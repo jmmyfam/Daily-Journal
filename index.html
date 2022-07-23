@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimmy's Daily Journal</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <h1>Daily Journal</h1>
+    <foot>by Jimmy Pham</foot>
+    <main id="container">
+        <form class="entryForm">
+            <fieldset>
+                <label for="entryDate">Date</label>
+                <input type="date" name="entryDate" class="entryForm__date">
+            </fieldset>
+            <form class="Concepts">
+                <fieldset>
+                    <label for="concepts">Concepts Covered</label>
+                    <input type="text" name="conceptsCovered" class="concepts_text">
+                </fieldset>
+                <form class="journalEntry">
+                    <fieldset>
+                        <label for="journalInput">Journal Entry</label>
+                        <textarea>
+                          
+                        </textarea>
+                    </fieldset>
+                </form>
+                <form class="moodInput">
+                    <fieldset>
+                        <label for="mood">Mood of the Day</label>
+                        <select>
+                            <option>okay</option>
+                            <option>happy</option>
+                            <option>tired</option>
+                            <option>bored</option>
+                        </select>
+                    </fieldset>
+                </form>
+            </form>
+        </form>
+        <button class="recordButton" type="button">Record Journal Entry</button>
+        <article id="entries"></article>
+    </main>
+</body>
+</html>
