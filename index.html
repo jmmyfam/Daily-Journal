@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Shadows+Into+Light&family=Square+Peg&display=swap');
+        
+        </style>
+        
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jimmy's Daily Journal</title>
+    <title>Jimmy's Journal</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <h1>Daily Journal</h1>
-    <foot>by Jimmy Pham</foot>
+    
     <main id="container">
+
         <form class="entryForm">
-            <fieldset>
-                <label for="entryDate">Date</label>
-                <input type="date" name="entryDate" class="entryForm__date">
-            </fieldset>
-            <form class="Concepts">
+            
+            <div id="dateAndMood">
                 <fieldset>
-                    <label for="concepts">Concepts Covered</label>
-                    <input type="text" name="conceptsCovered" class="concepts_text">
+                    <label for="entryDate">Date of Entry</label>
+                    <input type="date" name="entryDate" class="entryForm_date">
                 </fieldset>
-                <form class="journalEntry">
-                    <fieldset>
-                        <label for="journalInput">Journal Entry</label>
-                        <textarea>
-                          
-                        </textarea>
-                    </fieldset>
-                </form>
-                <form class="moodInput">
-                    <fieldset>
-                        <label for="mood">Mood of the Day</label>
-                        <select>
-                            <option>okay</option>
-                            <option>happy</option>
-                            <option>tired</option>
-                            <option>bored</option>
-                        </select>
-                    </fieldset>
-                </form>
-            </form>
+                <fieldset>
+                    <label for="mood">Mood</label>
+                    <select name="mood"  id="mood">
+                        <option value="" disabled selected hidden>How are you feeling?</option>
+                        <option value="Excited">Tired</option>
+                        <option value="Happy">Okay</option>
+                        <option value="Determined">Motivated</option>
+                        <option value="In the Zone">Focused</option>
+                        <option value="Neutral">Giddy</option>
+                        <option value="Overwhelmed">Happy</option>
+                        <option value="Discouraged">Sad</option>
+                        <option value="Frustrated">Lazy</option>
+                
+                    </select>
+                </fieldset>
+            </div>
+            <fieldset>
+                <label for="concepts">Concepts Covered</label>
+                <input type="text" name="concepts" class="entryForm_concepts text">
+            </fieldset>
+            <fieldset>
+                <label for="journalEntry">Journal Entry</label>
+                <textarea name="journalEntry" class="entryForm_journalEntry text"></textarea>
+            </fieldset>
         </form>
-        <button class="recordButton" type="button">Record Journal Entry</button>
-        <article id="entries"></article>
-    </main>
+
+        
+
+   
+</main>
 </body>
 </html>

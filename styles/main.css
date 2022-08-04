@@ -1,16 +1,107 @@
-main {
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction:column;
+body {
+    background-image: url(/images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    position:
+}
+  
+textarea {
+    
+}
+
+
+
+
+#container {
+    display: flex;
+    justify-content: space-around;
     justify-content: center;
-    margin: 150px;
+    font-size: 17px;
+    font-weight: bolder;
+    
+}
+
+.entryForm {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 180px 0 auto 0;
+    padding: 95px 0;
+    background-image: linear-gradient(#ff000034, #ebebeb00, #ffffff00);
+    border-radius: 300px;
+    box-shadow: 0 0 5px black;
+    color: #000000af;
+    
 }
 
 fieldset {
-    display:flex;
+    display: flex;
     flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    border: 0;
+   
 }
 
-button:hover {
-    color: aqua:
+fieldset > * {
+    width: 150px;
+    margin: 0 auto;
+}
+
+fieldset:hover {
+    color: #db3838ef;
+    font-style: bold;
+}
+
+
+label {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#newEntry {
+    text-align: center;
+}
+
+#dateAndMood {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 130px;
+}
+
+.text {
+    font-family: 'Quicksand', sans-serif;
+    width: 60%;
+    background-color: #ffffff9f;
+}
+
+
+.entryForm_journalEntry {
+    height: 200px;
+    font-family: 'Square Peg', cursive;
+    font-size: 150%;
+    resize: none;
+    
+
+}
+
+
+.titleAndEntries {
+    margin: 60px 330px 0 0;
+    width: 600px;
+    
+}
+
+
+
+#entries {
+    color: #111111;
+    font-size: 27px;
+    
+}
+
+select:invalid {
+    color: grey;
 }
