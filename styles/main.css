@@ -4,15 +4,9 @@ body {
     background-repeat: no-repeat;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    position:
-}
-  
-textarea {
     
 }
-
-
-
+  
 
 #container {
     display: flex;
@@ -21,6 +15,19 @@ textarea {
     font-size: 17px;
     font-weight: bolder;
     
+}
+
+.record {
+    text-align: center;
+    
+    width: 20px;
+    height: 20px;
+    background-color: #0202020e;
+    border-radius: 50px;
+    padding: 0px 0;
+    cursor: pointer;
+    border-width: thin;
+
 }
 
 .entryForm {
@@ -33,6 +40,7 @@ textarea {
     border-radius: 300px;
     box-shadow: 0 0 5px black;
     color: #000000af;
+    position: absolute;
     
 }
 
@@ -61,14 +69,13 @@ label {
     margin-bottom: 5px;
 }
 
-#newEntry {
-    text-align: center;
-}
+
 
 #dateAndMood {
     display: flex;
     justify-content: space-around;
     margin: 0 130px;
+    
 }
 
 .text {
@@ -94,6 +101,10 @@ label {
     
 }
 
+select {
+    cursor: pointer;
+}
+
 
 
 #entries {
@@ -102,6 +113,44 @@ label {
     
 }
 
-select:invalid {
-    color: grey;
-}
+.button {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-family: 'Quicksand', sans-serif;
+    top: 60px;
+    
+  }
+    
+  
+  .button:after {
+    content: "";
+    background-color: rgba(255, 76, 76, 0.253);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .button:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+  
+  @media (min-width: 768px) {
+    .button-52 {
+      padding: 13px 50px 13px;
+    }
+  }
+
