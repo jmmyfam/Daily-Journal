@@ -91,4 +91,7 @@ for (const each of entries) {
     if (each.id%2 !== 0) {
         console.log(each);
     }
+    else {
+        console.log('not an odd')
+    }
 }

@@ -105,7 +105,7 @@ h1 {
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
-    padding: 13px 20px 13px;
+    padding: 13px 50px 13px;
     outline: 0;
     border: 1px solid black;
     position: relative;
@@ -142,3 +142,21 @@ h1 {
     }
   }
 
+ .record {
+    position: relative;
+    background-color: #68606065;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 50%;
+    top: 20px;
+    bottom: 10px;
+    margin: auto;
+    transition: 0.5s;
+ }
+
+ .record:hover {
+    background-color: rgba(255, 255, 255, 0.445)
+ }
