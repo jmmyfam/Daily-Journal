@@ -86,10 +86,9 @@ for (const each of entries) {
 */
 
 // 3rd loop
-/*
+
 for (const each of entries) {
     if (each.id%2 !== 0) {
         console.log(each);
     }
 }
-*/
