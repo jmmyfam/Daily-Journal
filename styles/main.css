@@ -1,23 +1,18 @@
 body {
-    background-image: url(/images/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url('/images/background.jpg');
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    
+    background-size: cover;
 }
-  
-
+    
 #container {
     display: flex;
     justify-content: space-around;
     justify-content: center;
     font-size: 17px;
     font-weight: bolder;
-    
 }
-
-
+    
 .entryForm {
     display: flex;
     flex-direction: column;
@@ -30,6 +25,7 @@ body {
     color: #000000af;
     position: absolute;
     
+  
 }
 
 fieldset {
@@ -38,32 +34,27 @@ fieldset {
     width: 100%;
     margin: 0 auto;
     border: 0;
-   
 }
 
 fieldset > * {
     width: 150px;
     margin: 0 auto;
 }
-
+   
 fieldset:hover {
     color: #db3838ef;
     font-style: bold;
 }
-
 
 label {
     text-align: center;
     margin-bottom: 5px;
 }
 
-
-
 #dateAndMood {
     display: flex;
     justify-content: space-around;
     margin: 0 130px;
-    
 }
 
 .text {
@@ -72,17 +63,24 @@ label {
     background-color: #ffffff9f;
 }
 
-
 .entryForm_journalEntry {
     height: 200px;
-    font-family: 'Square Peg', cursive;
-    font-size: 150%;
+    font-weight: bold;
     resize: none;
-    
-
 }
 
+.entryForm_date {
+    background-color: #ffffff57;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+}
 
+.entryForm_concepts {
+    background-color: #ffffff57;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+}
+    
 .titleAndEntries {
     margin: 60px 330px 0 0;
     width: 600px;
@@ -91,20 +89,20 @@ label {
 
 select {
     cursor: pointer;
+    background-color: #ffffff67;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
 }
-
-
 
 #entries {
     color: #111111;
     font-size: 27px;
-    
 }
-
+    
 h1 {
     font-size: 16px;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 4px;
     padding: 13px 50px 13px;
     outline: 0;
     border: 1px solid black;
@@ -115,48 +113,71 @@ h1 {
     touch-action: manipulation;
     font-family: 'Quicksand', sans-serif;
     top: 60px;
-    
-  }
-    
-  
-  h1:after {
-    content: "";
-    background-color: rgba(255, 255, 255, 0.418);
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    height: 100%;
-    top: 10px;
-    left: 10px;
-    transition: 0.3s;
-  }
-  
-  h1:hover:after {
-    top: 0px;
-    left: 0px;
-  }
-  
-  @media (min-width: 768px) {
-    .button-52 {
-      padding: 13px 50px 13px;
-    }
-  }
+    font-family: 'Square Peg', cursive;
+    font-weight: bold;
+    font-size: 25px;
+}
 
- .record {
-    position: relative;
-    background-color: #68606065;
-    border: none;
-    padding: 10px;
-    box-shadow: 0 2px 4px darkslategray;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    border-radius: 50%;
-    top: 20px;
-    bottom: 10px;
-    margin: auto;
-    transition: 0.5s;
- }
+h1:after {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.281);
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 10px;
+  left: 10px;
+  transition: 0.3s;
+}
 
- .record:hover {
-    background-color: rgba(255, 255, 255, 0.445)
- }
+h1:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+.record {
+   position: relative;
+   background-color: #4e4c4cb4;
+   border: none;
+   padding: 10px;
+   box-shadow: 0 2px 4px darkslategray;
+   cursor: pointer;
+   transition: all 0.2s ease;
+   border-radius: 50%;
+   top: 20px;
+   bottom: 10px;
+   margin: auto;
+   transition: 0.5s;
+}
+
+.record:hover {
+   background-color: rgba(255, 255, 255, 0.445)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+    
+    
+    
